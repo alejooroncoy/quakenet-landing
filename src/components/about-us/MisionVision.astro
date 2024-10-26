@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import MissionValues from "@/assets/mission_values.jpg";
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="space-y-4">
+        <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+          Misión y Visión
+        </div>
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+          Nuestra Misión y Visión
+        </h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="text-xl font-bold">Misión</h3>
+            <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Nuestra misión es proporcionar a las empresas en Perú una
+              solución tecnológica avanzada que les permita prever y
+              mitigar los riesgos asociados a sismos y terremotos. A
+              través del uso de inteligencia artificial, machine learning
+              y big data, buscamos proteger sus activos y personal,
+              ayudándolas a tomar decisiones informadas para minimizar el
+              impacto de los desastres naturales en sus operaciones.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">Visión</h3>
+            <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Nuestra visión es convertirnos en la solución líder en
+              seguridad sísmica para empresas en Perú, reconocidos por
+              nuestra capacidad para integrar tecnologías innovadoras y
+              por nuestro compromiso con la mejora de la resiliencia
+              empresarial frente a desastres naturales, contribuyendo a un
+              entorno corporativo más seguro y preparado.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end">
+        <Image
+          src={MissionValues}
+          width="550"
+          height="310"
+          alt="Misión y Visión"
+          class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+        />
+      </div>
+    </div>
+  </div>
+</section>
