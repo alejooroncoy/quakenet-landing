@@ -35,6 +35,17 @@
     }
 }
 
+.section-container--risk-view, .section-container--our-solution {
+    flex-direction: column;
+}
+
+
+.section-container--risk-view {
+    width: min(100%, 1278px); 
+    gap: 0.5rem;  
+}
+
+
 .section-container--our-solution {
     flex-direction: column;
     gap: 2rem;
@@ -43,7 +54,11 @@
 
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
 
+.section__description--risk-view {
+    text-align: center;
+    width: 100ch;
 }
 
 .section__content{
