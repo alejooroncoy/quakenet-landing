@@ -1,0 +1,8 @@
+.section {
+
+}
+
+.section__title {
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    
+}
