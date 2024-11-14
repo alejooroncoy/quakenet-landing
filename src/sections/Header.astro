@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import LogoImg from "@/assets/logo.png";
+---
+
+<header>
+  <nav>
+    <Image src={LogoImg} alt="Logo" />
+
+    <ul>
+      <li>
+        <a href="#">Soluciones</a>
+      </li>
+      <li>
+        <a href="#">Sobre Nosotros</a>
+      </li>
+      <li>
+        <a href="#">Contacto Empresa</a>
+      </li>
+    </ul>
+
+    <div>
+      <button>Contáctanos</button>
+      <button>Descargar app</button>
+    </div>
+  </nav>
+</header>
