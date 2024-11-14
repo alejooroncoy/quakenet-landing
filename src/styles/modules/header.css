@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+.nav__logo{
+    display: flex;
+    gap: calc(0.0625rem * 8);
+    align-items: center;
+}
+
+.nav__logo__text {
+    font-size: 1.25rem;
+}
+
+.nav__logo__img{
+    width: 2.5rem;
+}
+
+.nav__links {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+
+
+    @media (width >= 768px) {
+        display: flex;
+    }
+}
