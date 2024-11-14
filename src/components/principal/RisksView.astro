@@ -1,11 +1,30 @@
 ---
 import RisksMap from "./RisksMap";
+import Wave from "@/components/shared/Wave.astro";
 ---
 
-<section class="section">
-    <div class="section-container section-container--risk-view">
-        <h2 class="section__title">Visualiza los Riesgos Sísmicos de tu Negocio</h2>
-        <p class="section__description section__description--risk-view">El mapa interactivo de QuakeNet te permite evaluar los niveles de riesgo sísmico para cualquier ubicación, capacitándote para tomar decisiones informadas sobre las operaciones y planes de expansión de tu negocio.</p>
-        <RisksMap client:only />
-    </div>
+<Wave reverse fill="var(--secondary)" />
+<section class="section section--risk-view">
+  <div class="section-container section-container--risk-view">
+    <span>Visualización de Riesgo Sísmico</span>
+    <h2 class="section__title">Visualiza los Riesgos Sísmicos de tu Negocio</h2>
+    <p class="section__description section__description--risk-view">
+      El mapa interactivo de QuakeNet te permite evaluar los niveles de riesgo
+      sísmico para cualquier ubicación, capacitándote para tomar decisiones
+      informadas sobre las operaciones y planes de expansión de tu negocio.
+    </p>
+    <RisksMap client:only="react">
+      <div slot="fallback">
+        <div class="loading" />
+      </div>
+    </RisksMap>
+  </div>
 </section>
+
+<style>
+    .loading {
+        width: 80%;
+        height: 30rem;
+        margin-inline: auto;
+    }
+</style>

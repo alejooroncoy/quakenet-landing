@@ -139,46 +139,13 @@ const RisksMap = () => {
           height: "30rem",
           borderRadius: "0.25rem",
           overflow: "hidden",
+          marginTop: "1rem",
         }}
         defaultZoom={5}
         mapId={GOOGLE_ID_MAP}
       >
         {points.map((point) => (
-          <MarkerWithInfo point={point} />
-          // <AdvancedMarker
-          //   key={point.id}
-          //   position={{
-          //     lat: point.lat,
-          //     lng: point.lng,
-          //   }}
-          // >
-          //   <Pin
-          //     background={
-          //       point.risk === "Alto"
-          //         ? "red"
-          //         : point.risk === "Moderado"
-          //         ? "orange"
-          //         : "green"
-          //     }
-          //     glyphColor="white"
-          //   >
-          //     {/* <strong>{point.city}</strong>
-          //     <br />
-          //     Riesgo Sísmico: {point.risk}
-          //     <br />
-          //     Población: {point.population.toLocaleString()} */}
-          //   </Pin>
-          //   {/* <Popup>
-          //     <strong>{point.city}</strong>
-          //     <br />
-          //     Riesgo Sísmico: {point.risk}
-          //     <br />
-          //     Población: {point.population.toLocaleString()}
-          //   </Popup>
-          //   <Tooltip direction="top" offset={[0, -20]} opacity={1} permanent>
-          //     {point.city}
-          //   </Tooltip> */}
-          // </AdvancedMarker>
+          <MarkerWithInfo key={point.id} point={point} />
         ))}
       </Map>
     </APIProvider>
