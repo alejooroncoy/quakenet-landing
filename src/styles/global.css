@@ -1,0 +1,9 @@
+@import "modules/reset.css";
+@import "modules/vars.css";
+@import "modules/button.css";
+@import "modules/menu.css";
+@import "modules/header.css";
+
+.body {
+  background-color: var(--bg-primary);
+}
