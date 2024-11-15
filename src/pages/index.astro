@@ -3,36 +3,15 @@ import Hero from "@/components/principal/Hero.astro";
 import OurSolutions from "@/components/principal/OurSolutions.astro";
 import RisksView from "@/components/principal/RisksView.astro";
 import Contact from "@/components/principal/Contact.astro";
-import Header from "@/sections/Header.astro";
 
-import "@/styles/global.css";
-import Footer from "@/sections/Footer.astro";
-import { COMPANY_NAME } from "@/constants";
+import Layout from "@/layout/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Principal |{COMPANY_NAME}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
-
-  </head>
-  <body class="body">
-    <Header />
-    <main class="main main--principal">
-      <Hero />
-      <OurSolutions />
-      <RisksView />
-      <Contact />
-    </main>
-    <Footer />
-  </body>
-</html>
+<Layout title="Principal">
+  <main class="main main--principal">
+    <Hero />
+    <OurSolutions />
+    <RisksView />
+    <Contact />
+  </main>
+</Layout>
