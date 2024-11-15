@@ -2,6 +2,11 @@
     display: flex;
 }
 
+
+.section--about-us {
+    padding-block: 4rem;
+}
+
 .section--hero {
     justify-content: center;
     padding-top: 2rem;
@@ -88,6 +93,11 @@
     @media (width >= 768px) {
         padding-inline: 0;
     }
+}
+
+.section__description--about-us {
+    width: 80ch;
+    text-align: center;
 }
 
 
