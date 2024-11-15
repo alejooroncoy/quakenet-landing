@@ -39,10 +39,19 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.0_
+- Configuración inicial de las dependencias (React.js, Astro).
+- Se agregó la página de contacto
+- Se implementó API con conexión a Base de Datos Mysql
+- Creación de los componentes **Contact**, **ContactForm**.
+- Además, se arregló bugs de la primera versión:
+  * Links sin funcionalidad (secciones de la página principal)
+
+
 ### _Versión 0.2.0_
 - Configuración inicial de las dependencias (React.js, Astro).
 - Se agregó la página sobre nosotros.
-- Creación de los componentes **AboutUs**, **MisionAndValues** y **OurTeaM**.
+- Creación de los componentes **AboutUs**, **MisionAndValues** y **OurTeam**.
 - Además, se arregló bugs de la primera versión:
   * Links sin funcionalidad (Header y footer)
   * Responsive en la página principal
