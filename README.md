@@ -39,6 +39,9 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.1_
+- Configuración para firebase Hosting y github actions para CI.
+
 ### _Versión 0.3.0_
 - Configuración inicial de las dependencias (React.js, Astro).
 - Se agregó la página de contacto
