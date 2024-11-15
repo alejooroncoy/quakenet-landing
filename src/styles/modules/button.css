@@ -9,6 +9,7 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button--header {
@@ -41,6 +42,12 @@
         padding-inline: 0.75rem;
         padding-block: 0.7rem;
     }
+}
+
+
+.button--contact {
+    margin-top: 0.5rem;
+    justify-content: center;
 }
 
 .button__text {

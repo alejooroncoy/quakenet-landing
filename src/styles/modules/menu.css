@@ -103,8 +103,14 @@
 
 }
 
+
 .menu--wrap {
     flex-wrap: wrap;
+}
+
+.menu__item--bold {
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .menu__item__link {
@@ -132,6 +138,14 @@
         width: 100%;
     }
 }
+
+.menu__item--feature {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+
 
 .menu__item__link--footer {
     &:before{ 
@@ -221,6 +235,11 @@
 
 .menu__item__icon--extralarge {
     --size: 3.5rem;
+}
+
+.menu__item__icon--feature {
+    --size: 2rem;
+    color: var(--text-reverse);
 }
 
 .menu__item__img {
