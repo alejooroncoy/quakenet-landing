@@ -6,9 +6,12 @@
 @import "modules/section.css";
 @import "modules/form.css";
 @import "modules/input.css";
+@import "modules/logo.css";
+@import "modules/footer.css";
 
 .body {
   background-color: var(--bg-primary);
+  font-family: var(--font-family);
 }
 
 .main {

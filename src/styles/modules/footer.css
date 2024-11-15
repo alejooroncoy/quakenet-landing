@@ -1,0 +1,5 @@
+.footer__copy {
+    display: flex;
+    justify-content: center;
+    padding-block: 0.75rem;
+}

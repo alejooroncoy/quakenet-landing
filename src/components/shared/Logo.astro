@@ -1,0 +1,10 @@
+---
+import { COMPANY_NAME } from "@/constants";
+import { Image } from "astro:assets";
+import LogoImg from "@/assets/logo.png";
+---
+
+<a href="/" class="logo">
+  <Image class="logo__img" src={LogoImg} alt="Logo" />
+  <h1 class="logo__text">{COMPANY_NAME}</h1>
+</a>
