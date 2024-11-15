@@ -39,8 +39,17 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.2.0_
+- Configuración inicial de las dependencias (React.js, Astro).
+- Se agregó la página sobre nosotros.
+- Creación de los componentes **AboutUs**, **MisionAndValues** y **OurTeaM**.
+- Además, se arregló bugs de la primera versión:
+  * Links sin funcionalidad (Header y footer)
+  * Responsive en la página principal
+
+
 ### _Versión 0.1.0_
-- Configuración inicial de las dependencias (React.js, Astro, Shadcn, y TailwindCSS).
+- Configuración inicial de las dependencias (React.js, Astro).
 - Desarrollo del layout principal y la página inicial.
 - Creación de los componentes **Hero**, **OurSolutions**, **RiskViewer** y **SeismicRiskMapPeru**.
 - Implementación de los componentes **Header** y **Footer**.
