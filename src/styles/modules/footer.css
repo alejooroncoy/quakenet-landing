@@ -1,3 +1,11 @@
+.footer {
+    padding-top: 1rem;
+    
+    @media (width >= 768px) {
+        padding-top: 0;
+    }
+}
+
 .footer__copy {
     display: flex;
     justify-content: center;
