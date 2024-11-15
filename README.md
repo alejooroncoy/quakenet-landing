@@ -1,47 +1,48 @@
-# Astro Starter Kit: Minimal
+<div align="center">
+  <img src="https://i.imgur.com/qDjDCC8.png" alt="MasterHead" />
+</div>
 
-```sh
-npm create astro@latest -- --template minimal
-```
+<div align="center">
+  <h1>Quakenet Landing</h1>
+</div>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Quakenet es una plataforma web avanzada para la **gestión integral de riesgos sísmicos**. Proporciona **alertas tempranas**, predice y analiza sismos y terremotos, facilitando una respuesta rápida y efectiva para proteger a **empresas y centros educativos** y reducir riesgos.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 🚀 Tecnologías utilizadas
 
-Inside of your Astro project, you'll see the following folders and files:
+Este proyecto se desarrolló utilizando una serie de tecnologías modernas que permiten un rendimiento óptimo y una experiencia de usuario rica:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **React.js**: Librería JavaScript para construir interfaces de usuario.
+- **Astro**: Framework para generar sitios web estáticos.
+- **TailwindCSS**: Framework CSS para un diseño rápido y flexible.
+- **BEM CSS**: Metodología para una estructura de CSS más clara y modular.
+- **Sharp**: Herramienta para optimización de imágenes.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 👥 Participantes
 
-Any static assets, like images, can be placed in the `public/` directory.
+A continuación, se presentan los miembros del equipo y sus respectivos identificadores:
 
-## 🧞 Commands
+- **Almerco Rojas, Jocelyn Damaly** - u20221G068
+- **Chi Cruzatt, Kevin Jorge** - u202313655
+- **Inga Orihuela, Christian Fabrizio** - u20231C111
+- **Jiménez Guerra, Gianmarco Fabian** - u202123843
+- **Lucas Moreto, James** - u202317816
+- **Oroncoy Almeyda, Alejandro** - u202313397
+- **Rivera Sosa, Eduardo Gael** - u202312222
+- **Tantaleán Mesta, Guillermo Fabian** - u202311958
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📜 Changelog
 
-## 👀 Want to learn more?
+### _Versión 0.1.0_
+- Configuración inicial de las dependencias (React.js, Astro, Shadcn, y TailwindCSS).
+- Desarrollo del layout principal y la página inicial.
+- Creación de los componentes **Hero**, **OurSolutions**, **RiskViewer** y **SeismicRiskMapPeru**.
+- Implementación de los componentes **Header** y **Footer**.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
