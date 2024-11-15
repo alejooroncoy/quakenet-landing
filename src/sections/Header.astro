@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+import LogoImg from "@/assets/logo.png";
+import { COMPANY_NAME } from "@/constants";
+import { Icon } from "astro-icon/components";
+import { socialLinks } from "@/data/social-links";
+---
+
+<header class="header">
+  <nav class="nav">
+    <a class="nav__logo">
+      <Image class="nav__logo__img" src={LogoImg} alt="Logo" />
+      <h1 class="nav__logo__text">{COMPANY_NAME}</h1>
+    </a>
+
+    <button class="button button--menu">
+      <Icon class="button__icon button__icon--menu" name="tabler:menu-2" />
+    </button>
+
+    <ul class="menu menu--header">
+      <li class="menu__item menu__item--header">
+        <div class="menu__item-container">
+          <header class="menu__item__header">
+            <a class="nav__logo">
+              <Image class="nav__logo__img" src={LogoImg} alt="Logo" />
+              <h1 class="nav__logo__text">{COMPANY_NAME}</h1>
+            </a>
+            <button class="button button--menu-close"
+              ><Icon class="button__icon" name="tabler:x" /></button
+            >
+          </header>
+          <div class="menu__item__content">
+            <p class="menu__item__description">
+              Anticípate a lo inesperado. En QuakeNet, ayudamos a las empresas
+              en Perú a gestionar y reducir el riesgo sísmico, protegiendo sus
+              operaciones con tecnología avanzada e información confiable.
+            </p>
+
+            <ul class="menu menu--network-socials">
+              {
+                socialLinks.map(({ name, url }) => (
+                  <li>
+                    <a  href={url} rel="noopener noreferrer" target="_blank" class="menu__item__link" href="#">
+                      <Icon class="menu__item__icon" name={`tabler:brand-${name.toLowerCase()}`} />
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="menu__item menu__item--header">
+        <a class="menu__item__link" href="#soluciones">Soluciones</a>
+      </li>
+      <li class="menu__item menu__item--header">
+        <a class="menu__item__link" href="/sobre-nosotros">Sobre Nosotros</a>
+      </li>
+    </ul>
+
+    <div class="overlay"></div>
+
+    <div class="nav__links">
+      <a class="button button--header">Contáctanos
+        <Icon class="button__icon" name="tabler:address-book" />
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".button--menu");
+    const menuCloseButton = document.querySelector(".button--menu-close");
+    const menu = document.querySelector(".menu");
+    const overlay = document.querySelector(".overlay");
+
+    menuButton.addEventListener("click", () => {
+      menu.classList.add("menu--open");
+      overlay.classList.add("overlay--open");
+    });
+
+    menuCloseButton.addEventListener("click", () => {
+      menu.classList.remove("menu--open");
+      overlay.classList.remove("overlay--open");
+    });
+
+    overlay.addEventListener("click", () => {
+      menu.classList.remove("menu--open");
+      overlay.classList.remove("overlay--open");
+    });
+  });
+</script>

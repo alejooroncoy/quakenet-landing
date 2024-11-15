@@ -1,0 +1,84 @@
+---
+import Logo from "@/components/shared/Logo.astro";
+import { COMPANY_NAME } from "@/constants";
+import { socialLinks } from "@/data/social-links";
+import { Icon } from "astro-icon/components";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <nav class="nav nav--footer">
+    <Logo />
+
+    <div class="nav__list-container">
+      <div class="nav__list">
+        <h3>Páginas</h3>
+        <ul class="menu menu--list">
+          <li>
+            <a class="menu__item__link menu__item__link--footer" href="#"
+              >Conocenos</a
+            >
+          </li>
+          <li>
+            <a class="menu__item__link menu__item__link--footer" href="#"
+              >Soluciones</a
+            >
+          </li>
+          <li>
+            <a class="menu__item__link menu__item__link--footer" href="#"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__list">
+        <h3>Soporte</h3>
+
+        <ul class="menu menu--list">
+          <li>
+            <a
+              class="menu__item__link menu__item__link--footer"
+              href="mailto:support@quakenet.site">Contacto</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__list nav__list--contact-footer nav__list--only-sm">
+        <h3>Contacto</h3>
+        <ul class="menu menu--links">
+          {
+            socialLinks.map(({ name, url }) => (
+              <li>
+                <a  href={url} rel="noopener noreferrer" target="_blank" class="menu__item__link menu__item__link--footer" href="#">
+                  <Icon class="menu__item__icon" name={`tabler:brand-${name.toLowerCase()}`} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="nav__list nav__list--contact-footer nav__list--only-md">
+      <h3>Contacto</h3>
+      <ul class="menu menu--links">
+        {
+          socialLinks.map(({ name, url }) => (
+            <li>
+              <a  href={url} rel="noopener noreferrer" target="_blank" class="menu__item__link menu__item__link--footer" href="#">
+                <Icon class="menu__item__icon" name={`tabler:brand-${name.toLowerCase()}`} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </nav>
+
+  <div class="footer__copy">
+    <small>&copy; {year} {COMPANY_NAME}. Todos los derechos reservados.</small>
+  </div>
+</footer>

@@ -1,0 +1,98 @@
+.button {
+    background: var(--primary);
+    color: var(--text-colorhight);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.button--header {
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    padding: 0.7rem 1rem;
+}
+
+.button--menu {
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border: none;
+
+    @media (width >= 768px) {
+        display: none;
+    }
+}
+
+
+.button--hero {
+    width: fit-content;
+    border-radius: 0.65rem;
+    font-size: 0.8rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.6rem;
+    
+    @media (width >= 768px) {
+        padding-inline: 0.75rem;
+        padding-block: 0.7rem;
+    }
+}
+
+.button__text {
+    display: none;
+    @media (width >= 768px) {
+        display: block;
+    }
+}
+
+.button__icon {
+    --size: 1rem;
+    width: var(--size);
+    height: var(--size);
+
+    @media (width >= 768px) {
+        --size: 1.25rem;
+    }
+}
+
+.button__icon--loading {
+    animation: spin 1s linear infinite;
+}
+
+.button--menu-close {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.button--outlined {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.button__icon {
+    --size: 0.95rem;
+    width: var(--size);
+    height: var(--size);
+}
+
+.button__icon--menu {
+    --size: 1.75rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

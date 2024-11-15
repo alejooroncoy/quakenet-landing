@@ -1,0 +1,13 @@
+:root {
+    scroll-behavior: smooth;
+    --primary: #42569a;
+    --secondary: #dee3ed;
+    --text-colorhight: #fff;
+    --bg-primary: 	#f0f1f5;
+    --text-muted-color: #6c757d;
+    --border-color: #e1e1e1;
+    --border-color-secondary: #e3e3e3;
+    --bg-link: #dcdcdc;
+    --bg-card: #f8f5f5;
+    --font-family: "Cabin", sans-serif;
+}

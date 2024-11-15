@@ -1,0 +1,14 @@
+.input {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.input--hero {
+    padding-left: 0.5rem;
+    width: 100%;
+
+    @media (width >= 768px) {
+        width: fit-content;
+    }
+}
