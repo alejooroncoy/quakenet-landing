@@ -15,6 +15,32 @@
     padding-block: 1rem;
 }
 
+.nav--footer{
+    flex-direction: column;
+    align-items: start;
+    padding-block: 0;
+    padding-bottom: 3rem;
+    gap: 1rem;
+    position: relative;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        display: block;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--border-color-secondary);
+    }
+    
+    @media (width >= 768px) {
+    padding-block: 3rem;
+        gap: 0;
+        flex-direction: row;
+    }
+}
+
 .nav__logo{
     display: flex;
     gap: calc(0.0625rem * 8);
@@ -27,6 +53,27 @@
 
 .nav__logo__img{
     width: 2.5rem;
+}
+
+.nav__list {
+    display: flex;
+   flex-direction: column; 
+   gap: 0.5rem;
+}
+
+.nav__list-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    
+    @media (width >= 768px) {
+        flex-direction: row;
+        gap: 10rem; 
+    }
+}
+
+.nav__list--contact-footer{
+    padding-right: 2rem;
 }
 
 .nav__links {
