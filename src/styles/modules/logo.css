@@ -1,0 +1,13 @@
+.logo{
+    display: flex;
+    gap: calc(0.0625rem * 8);
+    align-items: center;
+}
+
+.logo__text {
+    font-size: 1.25rem;
+}
+
+.logo__img{
+    width: 2.5rem;
+}
