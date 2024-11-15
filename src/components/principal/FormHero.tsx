@@ -1,4 +1,5 @@
 import { useState, type FormEventHandler } from "react";
+import { toast } from "sonner";
 
 const FormHero = ({ children }) => {
   const [loading, setLoading] = useState(false);
@@ -14,13 +15,19 @@ const FormHero = ({ children }) => {
 
     const email = formData.get("email");
 
-    await fetch("/api/send-email", {
+    const response = await fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email }),
     });
+
+    if(response.ok) {
+      toast("Correo enviado");
+    } else {
+      toast("Error al enviar el correo");
+    }
 
     setLoading(false);
   };

@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import LogoImg from "@/assets/logo.png";
 import { COMPANY_NAME } from "@/constants";
 import { Icon } from "astro-icon/components";
+import { socialLinks } from "@/data/social-links";
 ---
 
 <header class="header">
@@ -36,16 +37,15 @@ import { Icon } from "astro-icon/components";
             </p>
 
             <ul class="menu menu--network-socials">
-              <li class="menu__item menu__item--link">
-                <a class="menu__item__link menu__item__link--network-social" href="#">
-                  <Icon class="menu__item__icon"  name="tabler:brand-instagram" />
-                </a>
-              </li>
-              <li class="menu__item menu__item--link">
-                <a class="menu__item__link menu__item__link--network-social" href="#">
-                  <Icon class="menu__item__icon" name="tabler:brand-facebook" />
-                </a>
-              </li>
+              {
+                socialLinks.map(({ name, url }) => (
+                  <li>
+                    <a  href={url} rel="noopener noreferrer" target="_blank" class="menu__item__link" href="#">
+                      <Icon class="menu__item__icon" name={`tabler:brand-${name.toLowerCase()}`} />
+                    </a>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>
@@ -56,18 +56,13 @@ import { Icon } from "astro-icon/components";
       <li class="menu__item menu__item--header">
         <a class="menu__item__link" href="/sobre-nosotros">Sobre Nosotros</a>
       </li>
-      <li class="menu__item menu__item--header">
-        <a class="menu__item__link" href="/blog">Blog</a>
-      </li>
     </ul>
 
     <div class="overlay"></div>
 
     <div class="nav__links">
-      <a class="button button--header button--outlined">Contáctanos</a>
-      <a class="button button--header">
-        Lista de espera
-        <Icon class="button__icon" name="tabler:checklist" />
+      <a class="button button--header">Contáctanos
+        <Icon class="button__icon" name="tabler:address-book" />
       </a>
     </div>
   </nav>

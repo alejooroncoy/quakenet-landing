@@ -1,10 +1,12 @@
 ---
-import Header from "@/sections/Header.astro";
+import { Toaster } from "sonner";
 
+import Header from "@/sections/Header.astro";
 import "@/styles/global.css";
 import Footer from "@/sections/Footer.astro";
 import { COMPANY_NAME } from "@/constants";
 import "@/styles/global.css";
+
 
 const { title = "Principal" } = Astro.props;
 ---
@@ -27,5 +29,6 @@ const { title = "Principal" } = Astro.props;
     <Header />
     <slot />
     <Footer />
+    <Toaster client:load />
   </body>
 </html>
