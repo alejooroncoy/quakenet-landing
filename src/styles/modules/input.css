@@ -12,3 +12,20 @@
         width: fit-content;
     }
 }
+
+.input--contact {
+    border: 1px solid var( --ring);
+    border-radius: 0.25rem;
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.textarea {
+    height: 7rem;
+}
