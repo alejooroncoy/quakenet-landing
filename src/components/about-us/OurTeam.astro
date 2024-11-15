@@ -1,0 +1,34 @@
+---
+import integrants from "@/data/team";
+import { Image } from "astro:assets";
+import Wave from "../shared/Wave.astro";
+---
+
+<Wave fill="var(--secondary)" />
+<section class="section section--about-us section--our-team">
+  <div class="section-container section-container--risk-view">
+    <span class="section__minititle section__minititle--reverse">Nuestro Equipo</span>
+    <h2 class="section__title">Conoce a Nuestros Integrantes</h2>
+    <p class="section__description section__description--about-us">
+      Nuestro equipo de expertos en tecnología, ciencia de datos y gestión de
+      riesgos trabaja incansablemente para desarrollar soluciones que ayuden a
+      nuestros clientes a proteger sus operaciones y a sus empleados ante los
+      desastres naturales.
+    </p>
+
+    <ul class="menu menu--wrap menu--our-team">
+      {
+        integrants.map((integrant) => (
+          <li class="menu__item menu__item--our-team">
+            <Image
+              class="menu__item__img"
+              src={integrant.avatar}
+              alt={`Imagen de ${integrant.name}`}
+            />
+            <h3 class="menu__item__title">{integrant.name}</h3>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

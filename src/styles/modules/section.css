@@ -52,6 +52,9 @@
     }
 }
 
+.section--our-team{
+    background: var(--secondary);
+}
 
 .section-container {
     display: flex; 
@@ -74,6 +77,11 @@
 .section-container--risk-view {
     width: min(100%, 1278px); 
     gap: 0.5rem;
+}
+
+.section-container--mision-and-values  {
+    padding-inline: 2rem;
+    gap: 2rem;
 }
 
 
@@ -100,8 +108,14 @@
 }
 
 .section__description--about-us {
-    width: 80ch;
+    width: min(80ch, 100%);
+    padding-inline: 1rem;
     text-align: center;
+    
+    @media (width >= 768px) {
+        padding-inline: 0;
+    }
+    
 }
 
 
@@ -116,6 +130,8 @@
     }
 
 }
+
+
 
 .section__content{
     display: flex;
@@ -168,6 +184,10 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     color: var( --primary)
+}
+
+.section__minititle--reverse {
+    color: var(--text-reverse);
 }
 
 .section__content__info{
