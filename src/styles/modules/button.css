@@ -59,6 +59,11 @@
         --size: 1.25rem;
     }
 }
+
+.button__icon--loading {
+    animation: spin 1s linear infinite;
+}
+
 .button--menu-close {
     background: transparent;
     border: none;
@@ -81,4 +86,13 @@
 
 .button__icon--menu {
     --size: 1.75rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
