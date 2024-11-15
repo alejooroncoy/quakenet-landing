@@ -43,6 +43,12 @@
     }
 }
 
+
+.button--contact {
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
 .button__text {
     display: none;
     @media (width >= 768px) {

@@ -2,7 +2,6 @@
     display: flex;
 }
 
-
 .section--about-us {
     padding-block: 4rem;
 }
@@ -18,6 +17,13 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.section--contact-page {
+    padding-top: 8rem;  
+    padding-bottom: 4rem;  
+    justify-content: center;
+    position: relative;
 }
 
 .section--risk-view{
@@ -131,8 +137,6 @@
 
 }
 
-
-
 .section__content{
     display: flex;
     flex-direction: column;
@@ -145,6 +149,11 @@
     padding-inline: 2rem;
 }
 
+.section__content--contact {
+    width: 65%;
+    padding-left: 0;
+    gap: 8rem;
+}
 
 .section__content--our-solution {
     padding-inline: 0;
@@ -254,11 +263,26 @@
     }
 }
 
+
 .section__image--mision-and-values {
     width: 100%;  
     border-radius: 0.75rem;
 }
 
+.section__decoration-wave {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(5rem);
+}
+
+.section__decoration-wave__bg {
+    background-color: var(--acentuation);
+    flex: 1;
+}
 
 @keyframes bg-change {
     0% {

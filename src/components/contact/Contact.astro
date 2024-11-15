@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import Wave from "../shared/Wave.astro";
+import ContactForm from "./ContactForm.tsx";
+---
+
+<section class="section section--about-us section--contact-page">
+  <div class="section-container">
+    <div class="section__content section__content--contact">
+      <div class="section__info">
+        <h2 class="section__title">Únete a nuestra Beta de 15 días</h2>
+        <p class="section__description">
+          Prueba la plataforma QuakeNet sin costo y sin necesidad de tarjeta de
+          crédito.
+        </p>
+      </div>
+
+      <ul class="menu menu--list menu--contact">
+        <li class="menu__item menu__item--bold">Usa la beta para:</li>
+        <li class="menu__item menu__item--feature">
+          <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:map-pin-2" />
+          Descubre un mapa interactivo que muestra el nivel de riesgo de cada
+          una de tus ubicaciones de forma clara y precisa.
+        </li>
+        <li class="menu__item menu__item--feature">
+          <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:bell-ringing" />
+          Mantente informado con notificaciones específicas sobre áreas
+          vulnerables y proyecciones de actividad sísmica.
+        </li>
+        <li class="menu__item menu__item--feature">
+          <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:file-info" />
+          Accede a informes detallados para tomar decisiones estratégicas que
+          protejan a tu empresa y empleados.
+        </li>
+        <li class="menu__item menu__item--feature">
+          <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:tools" />
+           Experimenta con nuestra tecnología avanzada para anticiparte a los
+          riesgos y gestionar la seguridad de tus operaciones de manera
+          proactiva.
+        </li>
+      </ul>
+    </div>
+
+    <ContactForm client:load />
+  </div>
+  <div class="section__decoration-wave">
+    <Wave fill="var(--acentuation)" />
+    <div class="section__decoration-wave__bg"></div>
+  </div>
+</section>
