@@ -1,0 +1,40 @@
+---
+import MisionValues from "@/assets/mission_values.jpg";
+import { Image } from "astro:assets";
+---
+
+<section class="section section--hero section--mision-and-values">
+  <div class="section-container section-container--mision-and-values">
+    <div class="section__content section__content--mision-and-values">
+      <h2 class="section__title">Nuestra Misión y Visión</h2>
+      <ul class="menu menu--list menu--mision-and-values">
+        <li class="menu__item">
+          <h4 class="menu__item__title">Misión</h4>
+          <p class="menu__item__description">
+            Nuestra misión es proporcionar a las empresas en Perú una solución
+            tecnológica avanzada que les permita prever y mitigar los riesgos
+            asociados a sismos y terremotos. A través del uso de inteligencia
+            artificial, machine learning y big data, buscamos proteger sus
+            activos y personal, ayudándolas a tomar decisiones informadas para
+            minimizar el impacto de los desastres naturales en sus operaciones.
+          </p>
+        </li>
+        <li class="menu__item">
+          <h4 class="menu__item__title">Visión</h4>
+          <p class="menu__item__description">
+            Nuestra visión es convertirnos en la solución líder en seguridad
+            sísmica para empresas en Perú, reconocidos por nuestra capacidad
+            para integrar tecnologías innovadoras y por nuestro compromiso con
+            la mejora de la resiliencia empresarial frente a desastres
+            naturales, contribuyendo a un entorno corporativo más seguro y
+            preparado.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section__image-container">
+      <Image class="section__image section__image--mision-and-values" src={MisionValues} alt="Misión y Valores" />
+    </div>
+  </div>
+</section>

@@ -1,17 +1,12 @@
 ---
-import { Image } from "astro:assets";
-import LogoImg from "@/assets/logo.png";
-import { COMPANY_NAME } from "@/constants";
 import { Icon } from "astro-icon/components";
 import { socialLinks } from "@/data/social-links";
+import Logo from "@/components/shared/Logo.astro";
 ---
 
 <header class="header">
   <nav class="nav">
-    <a class="nav__logo">
-      <Image class="nav__logo__img" src={LogoImg} alt="Logo" />
-      <h1 class="nav__logo__text">{COMPANY_NAME}</h1>
-    </a>
+    <Logo />
 
     <button class="button button--menu">
       <Icon class="button__icon button__icon--menu" name="tabler:menu-2" />
@@ -21,10 +16,7 @@ import { socialLinks } from "@/data/social-links";
       <li class="menu__item menu__item--header">
         <div class="menu__item-container">
           <header class="menu__item__header">
-            <a class="nav__logo">
-              <Image class="nav__logo__img" src={LogoImg} alt="Logo" />
-              <h1 class="nav__logo__text">{COMPANY_NAME}</h1>
-            </a>
+            <Logo />
             <button class="button button--menu-close"
               ><Icon class="button__icon" name="tabler:x" /></button
             >
@@ -51,7 +43,7 @@ import { socialLinks } from "@/data/social-links";
         </div>
       </li>
       <li class="menu__item menu__item--header">
-        <a class="menu__item__link" href="#soluciones">Soluciones</a>
+        <a class="menu__item__link" href="/#soluciones">Soluciones</a>
       </li>
       <li class="menu__item menu__item--header">
         <a class="menu__item__link" href="/sobre-nosotros">Sobre Nosotros</a>

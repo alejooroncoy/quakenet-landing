@@ -65,8 +65,11 @@
 
     @media (width >= 768px) {
         min-height: 4rem;
-
     }
+}
+
+.menu--mision-and-values {
+    gap: 1rem;
 }
 
 .menu--open {
@@ -85,6 +88,23 @@
         flex-wrap: nowrap;
         gap: 2rem;
     }
+}
+
+.menu--our-team {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem 1rem;
+    width: min(100%, 1128px);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    
+    @media (width >= 768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+.menu--wrap {
+    flex-wrap: wrap;
 }
 
 .menu__item__link {
@@ -150,6 +170,13 @@
     }
 }
 
+.menu__item--our-team {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+}
+
 .menu__item-container {
     display: flex;
     flex-direction: column;
@@ -157,6 +184,10 @@
     padding-block: 0.5rem;
 }
 
+.menu__item__title{ 
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 .menu__item__header{
     display: flex; 
@@ -192,6 +223,13 @@
     --size: 3.5rem;
 }
 
+.menu__item__img {
+    --size: 6rem;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 .menu__item--our-solution{
     display: flex;
