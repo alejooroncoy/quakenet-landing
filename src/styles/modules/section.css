@@ -150,8 +150,13 @@
 }
 
 .section__content--contact {
-    width: 65%;
+    
     padding-left: 0;
+    gap: 6rem;
+}
+
+.section__content--contact-page {
+    width: 65%;
     gap: 8rem;
 }
 
