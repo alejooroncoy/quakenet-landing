@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     background: var(--bg-primary);
+    z-index: 6;
 }
 
 .nav{

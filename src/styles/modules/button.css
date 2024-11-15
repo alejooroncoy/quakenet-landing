@@ -4,6 +4,7 @@
     padding: 0.5rem;
     border-radius: 0.25rem;
     font-size: 0.95rem;
+    border: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -28,6 +29,36 @@
     }
 }
 
+
+.button--hero {
+    width: fit-content;
+    border-radius: 0.65rem;
+    font-size: 0.8rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.6rem;
+    
+    @media (width >= 768px) {
+        padding-inline: 0.75rem;
+        padding-block: 0.7rem;
+    }
+}
+
+.button__text {
+    display: none;
+    @media (width >= 768px) {
+        display: block;
+    }
+}
+
+.button__icon {
+    --size: 1rem;
+    width: var(--size);
+    height: var(--size);
+
+    @media (width >= 768px) {
+        --size: 1.25rem;
+    }
+}
 .button--menu-close {
     background: transparent;
     border: none;

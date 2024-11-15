@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import MockupHero from "@/assets/mockup_hero.png";
+import { COMPANY_NAME } from "@/constants";
+import { Icon } from "astro-icon/components";
+---
+
+<section class="section section--hero">
+  <div class="section-container">
+    <div class="section__content">
+      <h2 class="section__title">
+        Anticipa, Protege y Asegura el Futuro de tu Empresa
+      </h2>
+      <p class="section__description">
+        En QuakeNet, trabajamos junto a nuestros clientes para asegurar la
+        continuidad de sus negocios frente a los riesgos sísmicos. Nuestra app
+        convierte la incertidumbre en decisiones informadas, ayudándolos a
+        proteger lo que han construido.
+      </p>
+      <form class="form form--hero" action="">
+        <input class="input input--hero" type="text" placeholder="Tu correo de empresa" />
+        <button class="button button--hero">
+          <span class="button__text">Solicitar acceso</span>
+          <Icon class="button__icon" name="tabler:arrow-up-right" />
+        </button>
+      </form>
+    </div>
+
+    <Image
+      class="section__image"
+      src={MockupHero}
+      alt={`Capturas de la aplicación de ${COMPANY_NAME}`}
+    />
+  </div>
+</section>

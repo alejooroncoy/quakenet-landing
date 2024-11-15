@@ -3,7 +3,23 @@
 @import "modules/button.css";
 @import "modules/menu.css";
 @import "modules/header.css";
+@import "modules/section.css";
+@import "modules/form.css";
+@import "modules/input.css";
 
 .body {
   background-color: var(--bg-primary);
+}
+
+.main {
+  padding-top: 5rem;
+}
+
+.main--principal {
+  padding: 0;
+  padding-top: 5rem;
+  
+  @media (width >= 768px) {
+    padding: 0;
+  }
 }
