@@ -2,6 +2,8 @@
     display: flex;
     gap: calc(0.0625rem * 8);
     align-items: center;
+    text-decoration: none;
+    color: var(--color-text);
 }
 
 .logo__text {

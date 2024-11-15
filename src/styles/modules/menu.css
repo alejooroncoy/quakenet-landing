@@ -49,6 +49,26 @@
 
 }
 
+.menu--links {
+    min-height: 0;
+    gap: 0.3rem;
+    
+    @media (width >= 768px) {
+        min-height: 4rem;
+    }
+}
+
+.menu--list {
+    flex-direction: column;
+    gap: 0.25rem;
+    min-height: 0;
+
+    @media (width >= 768px) {
+        min-height: 4rem;
+
+    }
+}
+
 .menu--open {
     transform: translateX(0);
 }
@@ -89,6 +109,12 @@
 
     &:hover:before {
         width: 100%;
+    }
+}
+
+.menu__item__link--footer {
+    &:before{ 
+        content: none;
     }
 }
 
