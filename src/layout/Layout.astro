@@ -1,0 +1,31 @@
+---
+import Header from "@/sections/Header.astro";
+
+import "@/styles/global.css";
+import Footer from "@/sections/Footer.astro";
+import { COMPANY_NAME } from "@/constants";
+import "@/styles/global.css";
+
+const { title = "Principal" } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} |{COMPANY_NAME}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

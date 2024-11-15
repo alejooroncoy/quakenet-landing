@@ -11,6 +11,7 @@
 
 .body {
   background-color: var(--bg-primary);
+  font-family: var(--font-family);
 }
 
 .main {

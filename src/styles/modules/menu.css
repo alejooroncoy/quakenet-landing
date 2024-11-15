@@ -83,6 +83,7 @@
 
     @media (width >= 768px) {
         flex-wrap: nowrap;
+        gap: 2rem;
     }
 }
 
