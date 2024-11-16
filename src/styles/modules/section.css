@@ -20,10 +20,14 @@
 }
 
 .section--contact-page {
-    padding-top: 8rem;  
+    padding-top: 3rem;  
     padding-bottom: 4rem;  
     justify-content: center;
     position: relative;
+
+    @media (width >= 768px) {
+        padding-top: 8rem;  
+    }
 }
 
 .section--risk-view{
@@ -54,6 +58,21 @@
     padding-inline: 1.5rem;
     
     @media (width >= 768px) {
+        padding-inline: 0;
+    }
+}
+
+
+.section-container--contact-page {
+    gap: 3rem;
+
+  
+    
+    @media (width >= 768px) {
+        padding-inline: 2rem;
+    }
+
+    @media (width >= 1024px) {
         padding-inline: 0;
     }
 }
@@ -156,8 +175,14 @@
 }
 
 .section__content--contact-page {
-    width: 65%;
+    width: 100%;
     gap: 8rem;
+    padding-inline: 2rem;
+    
+    @media (width >= 768px) {
+        width: 65%;
+        padding-inline: 0;
+    }
 }
 
 .section__content--our-solution {
@@ -186,7 +211,7 @@
     gap: 0.5rem;
     
     @media (width >= 768px) {
-        width: fit-content;
+        width: 40%;
         padding-inline: 3rem;
         margin-left: auto;
         justify-content: center;
@@ -281,7 +306,11 @@
     inset: 0;
     display: flex;
     flex-direction: column;
-    transform: translateY(5rem);
+    transform: translateY(8rem);
+    
+    @media (width >= 768px) {
+        transform: translateY(5rem);
+    }
 }
 
 .section__decoration-wave__bg {
