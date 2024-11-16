@@ -43,11 +43,13 @@
 .section--our-solution {
     align-items: center;
     justify-content: center;
-    padding-block: 2rem;
-    padding-inline: 1.5rem;
     background: var(--secondary);
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
 
     @media (width >= 768px) {
+        padding-bottom: 5rem;
+        padding-top: 8.25rem;
         padding-inline: 0;
     }
 }
@@ -113,13 +115,18 @@
 
 .section-container--our-solution {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     background: var(--bg-card);
-    padding: 2rem;
-
+    padding: 1.8rem;
+    width: min(90%, 1128px);
+    
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-
+    
+    @media (width >= 768px) {
+        
+        padding: 2rem;
+    }
    
 }
 
@@ -193,7 +200,6 @@
     flex-direction: column;
     
     @media (width >= 768px) {
-        
         flex-direction: row;
     }
 }
