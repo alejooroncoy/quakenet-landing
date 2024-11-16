@@ -16,7 +16,6 @@ Este proyecto se desarrolló utilizando una serie de tecnologías modernas que p
 
 - **React.js**: Librería JavaScript para construir interfaces de usuario.
 - **Astro**: Framework para generar sitios web estáticos.
-- **TailwindCSS**: Framework CSS para un diseño rápido y flexible.
 - **BEM CSS**: Metodología para una estructura de CSS más clara y modular.
 - **Sharp**: Herramienta para optimización de imágenes.
 
