@@ -12,6 +12,8 @@
 .body {
   background-color: var(--bg-primary);
   font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -21,8 +23,14 @@
 .main--principal {
   padding: 0;
   padding-top: 5rem;
+  flex: 1;
   
   @media (width >= 768px) {
     padding: 0;
   }
+}
+
+.main--contact-page {
+  display: flex;
+  flex-direction: column;
 }
