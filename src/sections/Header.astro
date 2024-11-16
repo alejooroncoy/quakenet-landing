@@ -66,6 +66,7 @@ import Logo from "@/components/shared/Logo.astro";
     const menuCloseButton = document.querySelector(".button--menu-close");
     const menu = document.querySelector(".menu");
     const overlay = document.querySelector(".overlay");
+    const navLinks = document.querySelector(".menu--header");
 
     menuButton.addEventListener("click", () => {
       menu.classList.add("menu--open");
@@ -78,6 +79,17 @@ import Logo from "@/components/shared/Logo.astro";
     });
 
     overlay.addEventListener("click", () => {
+      menu.classList.remove("menu--open");
+      overlay.classList.remove("overlay--open");
+    });
+
+    navLinks.addEventListener("click", (e) => {
+      const target = (e.target as HTMLElement).tagName;
+
+      console.log({target});
+
+      if (target !== "A") return;
+
       menu.classList.remove("menu--open");
       overlay.classList.remove("overlay--open");
     });
