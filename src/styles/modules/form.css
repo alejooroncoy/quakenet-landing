@@ -21,12 +21,17 @@
 
 .form--contact {
     background: var(--text-colorhight);
-    height: calc(100dvh - 10rem);
-    width: 30%;
-    padding: 2rem;
+    width: 85%;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem 0rem var(--border-color);
     gap: 0.8rem;
     display: flex;
     justify-content: center;
+    
+    @media (width >= 768px) {
+        padding: 2rem;
+        width: 30%;
+        height: 30rem;
+    }
 }

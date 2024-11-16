@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm.tsx";
 ---
 
 <section class="section section--about-us section--contact-page">
-  <div class="section-container">
+  <div class="section-container section-container--contact-page">
     <div class="section__content section__content--contact section__content--contact-page">
       <div class="section__info">
         <h2 class="section__title">Únete a nuestra Beta de 15 días</h2>
@@ -15,7 +15,7 @@ import ContactForm from "./ContactForm.tsx";
         </p>
       </div>
 
-      <ul class="menu menu--list menu--contact">
+      <ul class="menu menu--list menu--contact menu--contact-only-sm">
         <li class="menu__item menu__item--bold">Usa la beta para:</li>
         <li class="menu__item menu__item--feature">
           <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:map-pin-2" />
@@ -42,6 +42,31 @@ import ContactForm from "./ContactForm.tsx";
     </div>
 
     <ContactForm client:load />
+
+    <ul class="menu menu--list menu--contact menu--contact-only-md">
+      <li class="menu__item menu__item--bold">Usa la beta para:</li>
+      <li class="menu__item menu__item--feature">
+        <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:map-pin-2" />
+        Descubrir un mapa interactivo que muestra el nivel de riesgo de cada
+        una de tus ubicaciones de forma clara y precisa.
+      </li>
+      <li class="menu__item menu__item--feature">
+        <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:bell-ringing" />
+        Mantenerte informado con notificaciones específicas sobre áreas
+        vulnerables y proyecciones de actividad sísmica.
+      </li>
+      <li class="menu__item menu__item--feature">
+        <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:file-info" />
+        Acceder a informes detallados para tomar decisiones estratégicas que
+        protejan a tu empresa y empleados.
+      </li>
+      <li class="menu__item menu__item--feature">
+        <Icon class="menu__item__icon menu__item__icon--feature" name="tabler:tools" />
+         Experimentar con nuestra tecnología avanzada para anticiparte a los
+        riesgos y gestionar la seguridad de tus operaciones de manera
+        proactiva.
+      </li>
+    </ul>
   </div>
   <div class="section__decoration-wave">
     <Wave fill="var(--acentuation)" />
