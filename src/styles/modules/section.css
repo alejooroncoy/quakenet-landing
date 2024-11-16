@@ -101,6 +101,7 @@
 
 .section-container--risk-view {
     width: min(100%, 1278px); 
+    margin-inline: auto;
     gap: 0.5rem;
 }
 
@@ -309,7 +310,19 @@
     transform: translateY(8rem);
     
     @media (width >= 768px) {
-        transform: translateY(5rem);
+        transform: translateY(12vh);
+    }
+
+    @media (width >= 1024px) {
+        transform: translateY(4hv);
+    }
+
+    @media (width >= 1560px) {
+        transform: translateY(-1vh);
+    }
+
+    @media (width >= 1850px) {
+        transform: translateY(-11vh);
     }
 }
 
