@@ -39,6 +39,9 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.2_
+- Se actualizó el responsive design de la página de **Contacto**.
+
 ### _Versión 0.3.1_
 - Configuración para firebase Hosting y github actions para CI.
 
