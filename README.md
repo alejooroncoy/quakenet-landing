@@ -1,7 +1,6 @@
 <div align="center">
   <img src="https://i.imgur.com/qDjDCC8.png" alt="MasterHead" />
 </div>
-
 <div align="center">
   <h1>Quakenet Landing</h1>
 </div>
@@ -38,8 +37,6 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
-<<<<<<< Updated upstream
-=======
 ### _Versión 0.3.5_
 - Se actualizó Github Actions scripts para CI.
 
@@ -48,7 +45,6 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 - Se arregló textos de la landing page
 - Se cambió la palabra "Listo" en el apartado de Protege tu negocio por la palabra "Estas listo" 
 
->>>>>>> Stashed changes
 ### _Versión 0.3.3_
 - Se actualizó la sección de **OurSolutions** y se mejoró la navegación en Header
 
@@ -68,7 +64,6 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 - Además, se arregló bugs de la primera versión:
   * Links sin funcionalidad (secciones de la página principal)
 
-
 ### _Versión 0.2.0_
 - Configuración inicial de las dependencias (React.js, Astro).
 - Se agregó la página sobre nosotros.
@@ -76,7 +71,6 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 - Además, se arregló bugs de la primera versión:
   * Links sin funcionalidad (Header y footer)
   * Responsive en la página principal
-
 
 ### _Versión 0.1.0_
 - Configuración inicial de las dependencias (React.js, Astro).
