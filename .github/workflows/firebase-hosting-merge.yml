@@ -10,8 +10,11 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - uses: actions/checkout@v4
-      - run: npm install
+      - run: pnpm install
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
@@ -20,3 +23,6 @@ jobs:
           projectId: quakenet-7f226
         env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
+          USER_PRIVATE_EMAIL: ${{ secrets.USER_PRIVATE_EMAIL }}
+          USER_PRIVATE_PASSWORD: ${{ secrets.USER_PRIVATE_PASSWORD }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}

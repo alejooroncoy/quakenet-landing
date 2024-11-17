@@ -38,6 +38,17 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+<<<<<<< Updated upstream
+=======
+### _Versión 0.3.5_
+- Se actualizó Github Actions scripts para CI.
+
+### _Versión 0.3.4_
+- Se arregló problemas de responsive web design en pantallas con grandes dimensiones (ancho mayor a 1568px)
+- Se arregló textos de la landing page
+- Se cambió la palabra "Listo" en el apartado de Protege tu negocio por la palabra "Estas listo" 
+
+>>>>>>> Stashed changes
 ### _Versión 0.3.3_
 - Se actualizó la sección de **OurSolutions** y se mejoró la navegación en Header
 
