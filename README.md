@@ -37,6 +37,9 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.6_
+- Se cambio la palabra "Listo", en el apartado de "protege tu negocio", por la palabra "Estas listo".
+
 ### _Versión 0.3.5_
 - Se actualizó Github Actions scripts para CI.
 
